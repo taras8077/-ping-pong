@@ -41,7 +41,7 @@ game=True
 finish=False 
 clock=time.Clock() 
 FPS=60 
-While game: 
+while game: 
     for e in event.get: 
         if e == QUIT: 
             game=False 
