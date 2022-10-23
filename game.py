@@ -12,7 +12,7 @@ class GameSprite(sprite.Sprite):
     def reset(self): 
         window.blit(self.image,(self.rect.x, self.rect.y))
 
-клас для ракеток
+#клас для ракеток
 class Player(GameSprite): 
     def update_right(self): 
         keys=key.get_pressed()
