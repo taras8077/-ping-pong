@@ -51,5 +51,6 @@ while game:
         P2.update_left()
         P1.reset()
         P2.reset()
-        ball.reset
-        clock.tick(FPS)
+        ball.reset()
+    display.update()
+    clock.tick(FPS)
