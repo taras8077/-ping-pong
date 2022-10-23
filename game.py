@@ -52,5 +52,4 @@ while game:
         P1.reset()
         P2.reset()
         ball.reset
-        window.update()
         clock.tick(FPS)
