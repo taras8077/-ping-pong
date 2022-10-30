@@ -55,6 +55,9 @@ while game:
         ball.rect.y+=speed_y
         if ball.rect.y>win_height-50 or ball.rect.y<0:
             speed_y*=-1
+        if sprite.collide_rect(P1,ball)or sprite.collide_rect(P2,ball):
+            speed_x*=-1
+            speed_y*=-1
         P1.reset()
         P2.reset()
         ball.reset()
