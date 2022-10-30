@@ -26,8 +26,8 @@ class Player(GameSprite):
             self.rect.y-=self.speed
         if[K_s] and self.rect.y<420:
             self.rect.y+=self.speed
-P2=Player("p_1.png",500,200,4,150,200)
-P1=Player("p_2.png",20,200,4,150,200)
+P2=Player("p_1.png",420,200,4,150,200)
+P1=Player("p_2.png",10,200,4,150,200)
 ball=GameSprite("m_1.png",200,200,4,50,50)
 win_width = 600
 # window width 
