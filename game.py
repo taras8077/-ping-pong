@@ -27,7 +27,7 @@ class Player(GameSprite):
         if[K_s] and self.rect.y<420:
             self.rect.y+=self.speed
 P2=Player("p_1.png",520,200,4,150,200)
-P1=Player("p_2.png",120,200,4,150,200)
+P1=Player("p_2.png",30,200,4,150,200)
 ball=GameSprite("m_1.png",200,200,4,50,50)
 win_width = 600
 # window width 
@@ -41,6 +41,8 @@ game=True
 finish=False 
 clock=time.Clock() 
 FPS=60 
+speed_x=3
+speed_y=3
 while game: 
     for e in event.get(): 
         if e == QUIT: 
@@ -49,6 +51,10 @@ while game:
         window.fill(fon) 
         P1.update_right()
         P2.update_left()
+        ball.rect.x+=speed_x
+        ball.rect.y+=speed_y
+        if ball.rect.y>win.height-50 or ball.rect.y<0:
+            speed_y*=-1
         P1.reset()
         P2.reset()
         ball.reset()
