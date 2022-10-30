@@ -26,7 +26,7 @@ class Player(GameSprite):
             self.rect.y-=self.speed
         if[K_s] and self.rect.y<420:
             self.rect.y+=self.speed
-P2=Player("p_1.png",420,200,4,150,200)
+P2=Player("p_1.png",450,200,4,150,200)
 P1=Player("p_2.png",10,200,4,150,200)
 ball=GameSprite("m_1.png",200,200,4,50,50)
 win_width = 600
@@ -61,7 +61,7 @@ while game:
         if ball.rect.x<0:
             finish=True
             game_over=True
-        if ball.rect.x>win_height-10:
+        if ball.rect.x>win_height:
             finish=True
             game_over=True
         P1.reset()
