@@ -45,7 +45,7 @@ speed_x=3
 speed_y=3
 while game: 
     for e in event.get(): 
-        if e == QUIT: 
+        if e.type == QUIT: 
             game=False 
     if finish != True: 
         window.fill(fon) 
