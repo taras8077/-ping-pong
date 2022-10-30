@@ -53,7 +53,7 @@ while game:
         P2.update_left()
         ball.rect.x+=speed_x
         ball.rect.y+=speed_y
-        if ball.rect.y>window.height-50 or ball.rect.y<0:
+        if ball.rect.y>win_height-50 or ball.rect.y<0:
             speed_y*=-1
         P1.reset()
         P2.reset()
